@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Router } from 'react-router-dom';
 
 function Navbar() {
+    const [ state, setState ] = useState()
+    // setState("Hello from state")
+    // console.log("State", state)
+
     return (
         <>
         <nav className="navbar">
