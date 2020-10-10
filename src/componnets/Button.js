@@ -21,4 +21,20 @@ export const Button = ({
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]
     const checkButtonSize = STYLES.includes(buttonSize) ? buttonSize : SIZES[0]
+    return (
+        <Link
+        to="/"
+        className="btn-modile"
+        >
+            <button
+                className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+                onClick={onClick}
+                type={type}
+            >
+                {children}
+            </button>
+        </Link>
+    )
 }
+
+
