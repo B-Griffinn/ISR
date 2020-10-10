@@ -12,7 +12,7 @@ const SIZES = [
     'btn--large'
 ]
 
-export const Button = ({
+const Button = ({
     children,
     type,
     onClick,
@@ -24,7 +24,7 @@ export const Button = ({
     return (
         <Link
         to="/"
-        className="btn-modile"
+        className="btn-mobile"
         >
             <button
                 className={`btn ${checkButtonStyle} ${checkButtonSize}`}
@@ -37,4 +37,4 @@ export const Button = ({
     )
 }
 
-
+export default Button;
