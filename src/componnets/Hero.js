@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+// import Button from './Button';
 import './Hero.css';
 import '../App.css';
 
@@ -8,8 +8,8 @@ function Hero() {
         <div className='hero-container'>
             <video src="" autoPlay loop muted></video>
             <h1>INTOXICATED SPORTS REPORT</h1>
-            <p>What are you waiting for?</p>
-            <div
+            <p>Sports & Adult Beverages - but mostly sports.</p>
+            {/* <div
                 className='hero-btns'
             >
                 <Button
@@ -29,7 +29,7 @@ function Hero() {
                         className='far fa-play-circle'
                     />
                 </Button>
-            </div>
+            </div> */}
         </div>
     )
 }
