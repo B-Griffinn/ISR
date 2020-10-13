@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../App.css';
-import HeroSection from '../Hero';
+import HeroSection from '../LandingPage/LandingPage';
 import Cards from '../Cards';
-function Home () {
+function LandingPage () {
     return (
         <>
         <HeroSection />
@@ -11,4 +11,4 @@ function Home () {
     )
 }
 
-export default Home;
+export default LandingPage;
