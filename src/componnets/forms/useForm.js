@@ -1,46 +1,44 @@
 import { useState, useEffect } from 'react';
 
-//funcionality to use our form
-// hold state for the form
-// track errors when needed
-// handleChange event
-// handleSubmit event
-const useForm = () => {
+const useForm = (callback, validate) => {
+  const [values, setValues] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const [values, setValues] = useState({
+  const handleChange = e => {
+    const { name, value } = e.target;
+    setValues({
+      ...values,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    setValues({
         name: '',
         email: '',
         message: ''
     })
 
-    // use this state to handle errors such as "forgot to enter <field name here>"
-    // const [errors, setErrors] = useState({})
+    setErrors(validate(values));
+    setIsSubmitting(true);
+  };
 
-    // check if submitting
-    const [ isSubmitting, setIsSubmitting] = useState(false)
+  useEffect(
+    () => {
+      if (Object.keys(errors).length === 0 && isSubmitting) {
+        callback();
+      }
+    },
+    [errors, isSubmitting, callback]
+  );
 
-    // udpate values on change in our Contact Form
-    const handleChange = (e) => {
-        const {name, value} = e.target
-        setValues({
-            ...values,
-        [name]: value
-        })
-    }
-
-    // prevent page from reloading and reset values of each field to be empty on submit
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setValues({
-            name: '',
-            email: '',
-            message: ''
-        });
-
-        setIsSubmitting(true);
-    }
-
-    return { handleChange, values, handleSubmit };
+  return { handleChange, handleSubmit, values, errors };
 };
 
 export default useForm;

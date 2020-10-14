@@ -1,41 +1,36 @@
 import React, { useState } from 'react'
+import './Form.css';
+
 import ContactForm from '../contact/ContactForm';
 import FormSuccess from '../contact/FormSuccess';
-import './Form.css';
+import sendmail from '../../images/sendmail.jpg';
 
 
 // This component is rendered on the Contact Page under Pages
-
 const Form = () => {
-    const [ isSubmitted, setisSubmitted] = useState(false);
-
-
-    // set is submitted to true
+    const [isSubmitted, setIsSubmitted] = useState(false);
+  
     const submitForm = () => {
-        setisSubmitted(true)
+      setIsSubmitted(true);
     }
 
+    const closeSuccess = () => {
+        setIsSubmitted(false)
+    }
 
     return (
-        <>
-        <div className="form-container">
-            <span className="close-btn">X</span>
-            <div className="form-content-left">
-                <img src="" alt="" className="form-img"/>
-            </div>
-            {!isSubmitted ? 
-                <ContactForm 
-                    submitForm={submitForm} 
-                />
-            : 
-                <FormSuccess 
-                
-                />
-            }
+      <>
+        <div className='form-container'>
+          <span className='close-btn' onClick={closeSuccess}>×</span>
+          <div className='form-content-left'>
+            <img className='form-img' src={sendmail} alt='mail' />
+          </div>
+          {isSubmitted === false ? <ContactForm submitForm={submitForm} />
+          : <FormSuccess />
+          }
         </div>
-
-        </>
-    )
-}
-
-export default Form
+      </>
+    );
+  };
+  
+  export default Form;
