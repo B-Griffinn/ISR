@@ -20,7 +20,7 @@ const Form = () => {
     return (
       <>
           <div className='close-btn' onClick={closeSuccess}>×</div>
-          {isSubmitted === false ? <FormSuccess submitForm={submitForm} />
+          {isSubmitted === false ? <ContactForm submitForm={submitForm} />
           : <FormSuccess />
           }
       </>
