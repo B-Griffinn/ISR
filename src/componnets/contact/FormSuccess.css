@@ -1,0 +1,36 @@
+ .success-wrapper {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+ }
+  .form-success {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 80px;
+    color: #fff;
+  }
+
+  .success-img {
+    width: 60%;
+    height: 60%;
+  }
+
+  
+  /* .form-img-2 {
+    border: 1px solid red;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  
+  .success-img {
+    width: 60%;
+    height: 60%;
+  } */

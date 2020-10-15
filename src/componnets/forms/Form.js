@@ -3,7 +3,6 @@ import './Form.css';
 
 import ContactForm from '../contact/ContactForm';
 import FormSuccess from '../contact/FormSuccess';
-import sendmail from '../../images/sendmail.jpg';
 
 
 // This component is rendered on the Contact Page under Pages
@@ -20,15 +19,10 @@ const Form = () => {
 
     return (
       <>
-        <div className='form-container'>
-          <span className='close-btn' onClick={closeSuccess}>×</span>
-          <div className='form-content-left'>
-            <img className='form-img' src={sendmail} alt='mail' />
-          </div>
-          {isSubmitted === false ? <ContactForm submitForm={submitForm} />
+          <div className='close-btn' onClick={closeSuccess}>×</div>
+          {isSubmitted === false ? <FormSuccess submitForm={submitForm} />
           : <FormSuccess />
           }
-        </div>
       </>
     );
   };
