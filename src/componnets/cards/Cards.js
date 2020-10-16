@@ -1,7 +1,6 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItems';
-
 import merch from '../../images/merch.jpg';
 import contact from '../../images/contact.jpg';
 
