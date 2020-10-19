@@ -177,8 +177,9 @@
  /* 
   MEDIA QUERIES
   */
-  @media screen and (max-width: 400px) {
+  @media only screen and (max-width: 400px) {
     .success-img {
       display: none;
     }
+  }
 
