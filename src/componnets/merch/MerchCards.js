@@ -1,5 +1,5 @@
 import React from 'react';
-import '../cards/Cards.css';
+import './MerchCards.css';
 import MerchCardItems from './MerchCardItems';
 import merch from '../../images/merch.jpg';
 import contact from '../../images/contact.jpg';
@@ -15,37 +15,37 @@ function Cards() {
               src={merch}
               text='T-Shirt'
               label='Merchandise'
-              path='/'
+              path='/merch'
             />
             <MerchCardItems
               src={contact}
               text='Beanie'
               label='Contact Us'
-              path='/contact'
+              path='/merch'
             />
-                       <MerchCardItems
+              <MerchCardItems
               src={merch}
               text='T-Shirt'
               label='Merchandise'
-              path='/'
+              path='/merch'
             />
-                       <MerchCardItems
+            <MerchCardItems
+              src={contact}
+              text='Beanie'
+              label='Contact Us'
+              path='/merch'
+            />
+             <MerchCardItems
               src={merch}
               text='T-Shirt'
               label='Merchandise'
-              path='/'
+              path='/merch'
             />
-                       <MerchCardItems
-              src={merch}
-              text='T-Shirt'
-              label='Merchandise'
-              path='/'
-            />
-                       <MerchCardItems
-              src={merch}
-              text='T-Shirt'
-              label='Merchandise'
-              path='/'
+            <MerchCardItems
+              src={contact}
+              text='Beanie'
+              label='Contact Us'
+              path='/merch'
             />
           </ul>
         </div>

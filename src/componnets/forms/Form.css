@@ -55,6 +55,7 @@
   }
   
   .form-success {
+    margin: auto;
     text-align: center;
     font-size: 24px;
     margin-top: 80px;
@@ -173,9 +174,11 @@
     height: 50%;
   }
 
-  /* 
+ /* 
   MEDIA QUERIES
   */
-  @media screen and (max-width: 768px) {
-
+  @media screen and (max-width: 400px) {
+    .success-img {
+      display: none;
+    }
   }
