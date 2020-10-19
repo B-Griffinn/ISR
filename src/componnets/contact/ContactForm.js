@@ -11,7 +11,7 @@ const ContactForm = ({ submitForm }) => {
     );
   
     return (
-      <div className='form-content-right'>
+      <div className='form-container'>
         <form onSubmit={handleSubmit} className='form' noValidate>
           <h1>
             Get started with us today! Create your account by filling out the

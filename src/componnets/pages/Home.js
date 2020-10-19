@@ -1,16 +1,17 @@
 import React from 'react';
 import '../../App.css';
-import HeroSection from '../LandingPage/LandingPage';
+import LandingPage from '../LandingPage/LandingPage';
 import Cards from '../cards/Cards';
 
 // Home Page is the Landing Page aka route to "/"
-function LandingPage () {
+function Home () {
+
     return (
         <>
-        <HeroSection />
+        <LandingPage />
         <Cards />
         </>
     )
 }
 
-export default LandingPage;
+export default Home;
