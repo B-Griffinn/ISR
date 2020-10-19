@@ -2,9 +2,12 @@ import React from 'react';
 import useForm from '../forms/useForm';
 import "../forms/Form.css";
 import validate from '../validation/validateInfo';
+
 //This component holds all of the FORM inputs and actions and is displayed on the FORM componnet
 
 const ContactForm = ({ submitForm }) => {
+
+
     const { handleChange, handleSubmit, values, errors } = useForm(
       submitForm,
       validate

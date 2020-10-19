@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import emailjs from 'emailjs-com';
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
@@ -19,6 +20,7 @@ const useForm = (callback, validate) => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    sendEmail(e)
     setValues({
         name: '',
         email: '',
@@ -37,6 +39,18 @@ const useForm = (callback, validate) => {
     },
     [errors, isSubmitting, callback]
   );
+
+      // EMAIL JS FUNCTIONALITY
+      function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('gmail_test', 'contact_form', e.target, 'user_iHKbBGEc2ruGFHITfjH3o')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
 
   return { handleChange, handleSubmit, values, errors };
 };
