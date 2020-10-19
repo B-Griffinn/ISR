@@ -121,11 +121,19 @@ function Footer() {
             <a
               className='social-icon-link youtube'
               href='https://anchor.fm/isr2020/'
-              mailto
               target='blank'
               aria-label='Anchor'
             >
               <i className='fas fa-anchor' />
+            </a>
+
+            <a
+              className='social-icon-link youtube'
+              href='mailto:isrpodcast@yahoo.com'
+              target='blank'
+              aria-label='Anchor'
+            >
+              <i className='fas fa-envelope' />
             </a>
 
             {/* <Link
