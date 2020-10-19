@@ -7,7 +7,7 @@ import contact from '../../images/contact.jpg';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>MORE THAN JUST PERSONAL TRAINING</h1>
+      <h1>NOT YOUR AVERAGE SPORTS PODCAST</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>

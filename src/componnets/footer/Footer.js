@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className='footer-container'>
-      {/* <section className='footer-subscription'>
+      <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
           Join the ISR newsletter!
         </p>
@@ -24,7 +24,7 @@ function Footer() {
             <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
         </div>
-      </section> */}
+      </section>
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           {/* <div className='footer-link-items'>
@@ -55,23 +55,23 @@ function Footer() {
             <h2>Social Media</h2>
             <a
                 target="blank"
-                href='https://www.instagram.com/cristiannoh15/?hl=en'
+                href='https://www.instagram.com/intoxicatedsportsreport/'
             >
                 Instagram
             </a>
             {/* <Link to='/'>Facebook</Link> */}
-            {/* <a
+            <a
                 target="blank"
                 href='https://open.spotify.com/show/3nQqvzFRcj4esPpw6FsJTZ'
             >
                 Spotify
-            </a> */}
-            {/* <a 
-                href=''
+            </a>
+            <a 
+                href='https://anchor.fm/isr2020/'
                 target='blank'
             >
-                PLACEHOLDER
-            </a> */}
+                Anchor
+            </a>
           </div>
         </div>
       </div>
@@ -79,30 +79,40 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              cristian garcia
-              {/* <i className='fas fa-microphone-alt' /> */}
+              ISR
+              <i className='fas fa-microphone-alt' />
             </Link>
           </div>
-          <small className='website-rights'>cgarcia © 2020</small>
+          <small className='website-rights'>ISR © 2020</small>
           <div className='social-icons'>
             <a
               className='social-icon-link instagram'
-            //   to='/'
-              href='https://www.instagram.com/cristiannoh15/?hl=en'
+              href='https://www.instagram.com/intoxicatedsportsreport/'
               target='blank'
               aria-label='Instagram'
             >
               <i className='fab fa-instagram' />
             </a>
+
+            <a
+              className='social-icon-link facebook'
+              href='https://open.spotify.com/show/3nQqvzFRcj4esPpw6FsJTZ'
+              target='blank'
+              aria-label='Spotify'
+            >
+              <i className='fab fa-spotify'/>
+            </a>
+
             <a
               className='social-icon-link youtube'
-              href="mailto:cgsaldanasbd@gmail.com"
+              href='https://anchor.fm/isr2020/'
               mailto
               target='blank'
-              aria-label='Email'
+              aria-label='Anchor'
             >
-              <i className='far fa-envelope' />
+              <i className='fas fa-anchor' />
             </a>
+
             <Link
               className='social-icon-link twitter'
               to='/'
