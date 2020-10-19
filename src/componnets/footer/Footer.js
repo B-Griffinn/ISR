@@ -38,9 +38,9 @@ function Footer() {
           <div className='footer-link-items'>
             <h2>Contact Us</h2>
             <Link to='/contact'>Contact</Link>
-            {/* <Link to='/'>Support</Link> */}
-            {/* <Link to='/'>Destinations</Link> */}
-            {/* <Link to='/sponsorships'>Sponsorships</Link> */}
+            <Link to='/'>Support Us</Link>
+            <Link to='/'>Sponsorships</Link>
+            <Link to='/'>Schedule</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
@@ -65,6 +65,12 @@ function Footer() {
                 href='https://open.spotify.com/show/3nQqvzFRcj4esPpw6FsJTZ'
             >
                 Spotify
+            </a>
+            <a 
+                href='https://twitter.com/IntoxicatedPod'
+                target='blank'
+            >
+                Twitter
             </a>
             <a 
                 href='https://anchor.fm/isr2020/'
@@ -104,6 +110,15 @@ function Footer() {
             </a>
 
             <a
+              className='social-icon-link twitter'
+              href='https://twitter.com/IntoxicatedPod'
+              target='blank'
+              aria-label='Twitter'
+            >
+              <i className='fab fa-twitter' />
+            </a>
+
+            <a
               className='social-icon-link youtube'
               href='https://anchor.fm/isr2020/'
               mailto
@@ -113,22 +128,14 @@ function Footer() {
               <i className='fas fa-anchor' />
             </a>
 
-            <Link
-              className='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i className='fab fa-twitter' />
-            </Link>
-            <Link
+            {/* <Link
               className='social-icon-link twitter'
               to='/'
               target='_blank'
               aria-label='LinkedIn'
             >
               <i className='fab fa-linkedin' />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
